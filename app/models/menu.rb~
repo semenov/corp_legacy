@@ -1,0 +1,12 @@
+class Menu
+  def self.get
+    menu = []
+    Site.first.mods.each do |mod|
+      menu[] = {
+        :title => mod.title,
+        :url => "/#{mod.name}"
+      }
+    end
+    return menu
+  end
+end

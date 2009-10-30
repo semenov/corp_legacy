@@ -1,0 +1,10 @@
+<div class="page">
+<h1 class="title">
+  <%=h @page.title %>
+</h1>
+<div class="content">
+  <%= simple_format @page.body %>
+</div>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>

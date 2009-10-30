@@ -1,0 +1,2 @@
+class Mod2 < ActiveRecord::Base
+end

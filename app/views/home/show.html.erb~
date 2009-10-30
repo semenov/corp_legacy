@@ -1,0 +1,5 @@
+<h1 class="title">Общая информация</h1>
+<div class="brief">
+  <%= simple_format @brief %>
+  <p><%= link_to 'Редактировать', edit_home %></p>
+</div>

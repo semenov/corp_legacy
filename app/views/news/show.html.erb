@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @news.title %>
+</p>
+
+<p>
+  <b>Annotation:</b>
+  <%=h @news.annotation %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @news.body %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%=h @news.published_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Back', news_path %>

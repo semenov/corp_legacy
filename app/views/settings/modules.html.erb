@@ -1,0 +1,15 @@
+<h1>Настройки &rarr; Модули</h1>
+<p>
+<ul>
+  <% for mod in @mods %>
+    <li>
+      <strong><%= mod[:title] %></strong>
+      <% if mod[:active] %>
+        [Выключить]
+      <% else %>
+        [Включить]
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+</p>
